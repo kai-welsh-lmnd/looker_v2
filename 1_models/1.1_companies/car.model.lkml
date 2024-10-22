@@ -7,6 +7,7 @@ include: "/**/*.view.lkml"                 # include all views in this project
 # and define the joins that connect them together.
 
 explore: policies_ext {
+  hidden: yes
   always_filter: {
     filters: [policies_ext.company: "car"]
   }

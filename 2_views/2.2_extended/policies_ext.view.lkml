@@ -1,8 +1,8 @@
 include: "/2_views/2.1_base/policies.view.lkml"
 view: policies_ext {
   extends: [policies]
-###### DATES
 
+###### DATES
   dimension_group: canceled_created_at {
     label: "Canceled Created At "
     group_label: "* Dates"
@@ -49,7 +49,6 @@ view: policies_ext {
   }
 
 ###### GEO
-
   dimension: city {
     label: "City"
     group_label: "Geo"
@@ -65,7 +64,6 @@ view: policies_ext {
   }
 
 ###### ATTRIBUTES
-
   dimension: line_of_business {
     label: "Line of Business"
     group_label: "Attributes"
@@ -140,7 +138,6 @@ view: policies_ext {
   }
 
 ###### QUOTE MEASURES
-
   measure: quote_premium {
     label: "Total Quote Premium"
     group_label: "Premium"

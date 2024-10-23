@@ -42,23 +42,11 @@ dbt models.
 5. Validation
 6. Implementation
 
-### Footer
-I wanted to come up with a better title for this project and am open to suggestions.
-Here is what ChatGPT could come up with based a lot of Looker/Lemonade puns:
-
-> Looker 2.0: Zestier Insights
-> Looker 2.0: Pulp-Free Edition
-> Looker 2.0: Squeezing the Data Juice
-> Looker 2.0: Insurance on the Rocks
-> Looker 2.0: When Life Gives You Data
-> Looker 2.0: The Citrus Surge
-> Looker 2.0: Squeeze Play
-> Looker 2.0: Tart and Smart
-> Looker 2.0: More Zing, Less Sting
-> Looker 2.0: Sweet Success Press
+### [Additional Resources]
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen.)
 
    [extended views]: <https://medium.com/@dataplatr/mastering-large-projects-in-google-looker-structured-model-creation-and-management-f284327cec18>
    [Organization of lookML folders]: <https://medium.com/slateco-blog/how-to-structure-your-lookml-project-5682d178a3ca>
    [LookML dashboards]: <https://cloud.google.com/looker/docs/building-lookml-dashboards>
+   [Additional Resources]: <https://www.scdata.co/looker-tips>

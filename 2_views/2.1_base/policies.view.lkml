@@ -3,7 +3,6 @@ view: policies {
   view_label: "Policies"
 
 ###### IDs
-
   dimension: policy_id {
     primary_key: yes
     group_label: "IDs"
@@ -63,7 +62,6 @@ view: policies {
   }
 
 ###### GEO
-
   dimension: country {
     label: "Country"
     group_label: "Geo"
@@ -79,7 +77,6 @@ view: policies {
   }
 
 ###### DATES
-
   dimension_group: effective_at {
     label: "Effective At "
     group_label: "* Dates"
@@ -158,7 +155,6 @@ view: policies {
 
 
 ###### ATTRIBUTES
-
   dimension: status {
     label: "Status"
     group_label: "Attributes"
@@ -191,7 +187,6 @@ view: policies {
   }
 
 ###### PREMIUM MEASURES
-
   measure: current_premium {
     label: "Total Current Premium"
     group_label: "Premium"

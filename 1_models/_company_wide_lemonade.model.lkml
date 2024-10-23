@@ -7,5 +7,5 @@ include: "/**/*.view.lkml"                 # include all views in this project
 # and define the joins that connect them together.
 
 explore: policies {
-  hidden: yes
+  hidden: no
 }

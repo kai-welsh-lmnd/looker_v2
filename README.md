@@ -43,10 +43,11 @@ dbt models.
 6. Implementation
 
 ### [Additional Resources]
-
+### [dbt looker explore design]
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen.)
 
    [extended views]: <https://medium.com/@dataplatr/mastering-large-projects-in-google-looker-structured-model-creation-and-management-f284327cec18>
    [Organization of lookML folders]: <https://medium.com/slateco-blog/how-to-structure-your-lookml-project-5682d178a3ca>
    [LookML dashboards]: <https://cloud.google.com/looker/docs/building-lookml-dashboards>
    [Additional Resources]: <https://www.scdata.co/looker-tips>
+   [dbt looker explore design]: <https://www.getdbt.com/blog/how-to-design-your-looker-explores>

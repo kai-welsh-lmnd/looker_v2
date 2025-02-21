@@ -1,19 +1,45 @@
 connection: "snowflake"
 
-include: "/**/*.view.lkml"                 # include all views in this project
-# include: "my_dashboard.dashboard.lookml"   # include a LookML dashboard called my_dashboard
+#include ALL views TOGGLE
+#include: "/****/***/**/*.view.lkml"
 
-# # Select the views that should be a part of this model,
-# # and define the joins that connect them together.
-#
-# explore: order_items {
-#   join: orders {
-#     relationship: many_to_one
-#     sql_on: ${orders.id} = ${order_items.order_id} ;;
-#   }
-#
-#   join: users {
-#     relationship: many_to_one
-#     sql_on: ${users.id} = ${orders.user_id} ;;
+#include specific views (preferred)
+include: "/****/finance_views/**/*.view.lkml"
+include: "/2_views/user_views/**/*.view.lkml"
+include: "/datagroups.lkml"
+
+###### ADR ######
+
+# explore: annual_dollar_retention_agg {
+#   label: "ADR - Topline"
+#   group_label: "Finance - ADR"
+# }
+
+# explore: annual_dollar_retention {
+#   label: "ADR"
+#   group_label: "Finance - ADR"
+# }
+
+# explore: annual_dollar_retention_cross_sales {
+#   label: "ADR - Cross Sales"
+#   group_label: "Finance - ADR"
+# }
+
+# ###### IFP ######
+
+# explore: finance_daily_events {
+#   group_label: "Finance - IFP"
+#   label: "Finance Daily Events"
+#   view_label: "* Finance Daily Events"
+#   join: new_user_date {
+#     view_label: "* Finance Daily Events"
+#     relationship: one_to_one
+#     sql_on: ${policies_user_status_changes_sf.encrypted_id} = ${new_user_date.encrypted_id} ;;
+#     fields: [new_user_date.initial_lob,new_user_date.initial_form_grouped,new_user_date.initial_form,new_user_date.new_user_date,new_user_date.new_user_month]
 #   }
 # }
+
+# explore: finance_daily_events_agg {
+#   label: "Finance Daily Events - Aggregated w/ Corrections"
+#   group_label: "Finance - IFP"
+# }dfgdfg
